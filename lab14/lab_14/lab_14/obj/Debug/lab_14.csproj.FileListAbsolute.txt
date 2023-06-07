@@ -1,0 +1,11 @@
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\bin\Debug\lab_14.exe.config
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\bin\Debug\lab_14.exe
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\bin\Debug\lab_14.pdb
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.csproj.AssemblyReference.cache
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.csproj.SuggestedBindingRedirects.cache
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.Form1.resources
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.Properties.Resources.resources
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.csproj.GenerateResource.cache
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.csproj.CoreCompileInputs.cache
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.exe
+C:\univer\semestr_6\крипта\lab14\lab_14\lab_14\obj\Debug\lab_14.pdb

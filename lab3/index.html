@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+</style>
+
+<body>
+    <main>
+        <section>
+            <div>
+                <h2>NOD for 2 numbers</h2>
+                <label for="number1"></label><input id="number1" type="text">
+                <label for="number2"></label><input id="number2" type="text">
+                </br>
+                <button onclick="getNod2()">GET</button>
+                <h2 id="Nod2"></h2>
+            </div>
+
+            <div>
+                <h2>NOD for 3 numbers</h2>
+                <label for="val1"></label><input id="val1" type="text">
+                <label for="val2"></label><input id="val2" type="text">
+                <label for="val3"></label><input id="val3" type="text">
+                </br>
+                <button onclick="getNod3()">GET</button>
+                <h2 id="Nod3"></h2>
+            </div>
+
+            <div>
+                <h2>Simple numbers in the range from 2 to n</h2>
+                <label for="number"></label><input id="number" type="text">
+                </br>
+                <button onclick="getSimpleNumbers()">GET</button>
+                <h2 id="SimpleNumbers"></h2>
+            </div>
+
+            <div>
+                <h2>Simple numbers in the interval</h2>
+                <label for="first"></label><input id="first" type="text">
+                <label for="second"></label><input id="second" type="text">
+                </br>
+                <button onclick="getSimpleNumbersIntr()">GET</button>
+
+                <h2 id="SimpleNumbersIntr"></h2>
+
+            </div>
+
+            <div>
+                <h2>Product of simple multipliers and is simple number?</h2>
+                <label for="num1"></label><input id="num1" type="text">
+                </br>
+                <button onclick="getNumbers()">GET NUMBERS</button>
+                <h2 id="Numbers"></h2>
+                <button onclick="isSimple()">IS SIMPLE</button>
+                <h2 id="Simple"></h2>
+            </div>
+
+        </section>
+    </main>
+</body>
+<script>
+    getNod2 = async () => {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+        while (number1 !== 0 && number2 !== 0) {
+            if (number1 > number2) {
+                number1 = number1 % number2;
+            } else {
+                number2 = number2 % number1;
+            }
+        }
+        let answer = Math.max(number1, number2)
+        document.getElementById("Nod2").innerHTML = "=" + answer;
+    }
+
+    getNod3 = async () => {
+        let val1 = document.getElementById("val1").value;
+        let val2 = document.getElementById("val2").value;
+        let val3 = document.getElementById("val3").value;
+        let arguments = [val1, val2, val3]
+
+        for (var x = arguments[0], i = 1; i < arguments.length; i++) {
+            var y = arguments[i];
+            while (x && y) {
+                x > y ? x %= y : y %= x;
+            }
+            x += y;
+        }
+        document.getElementById("Nod3").innerHTML = "= " + x;
+    }
+
+    getSimpleNumbers = async () => {
+        let number = document.getElementById("number").value;
+        let numbers = [];
+        let count = 0;
+        nextPrime:
+        for (let i = 2; i <= number; i++) {
+
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) continue nextPrime;
+            }
+            numbers.push(i)
+            count = numbers.length
+
+        }
+        document.getElementById("SimpleNumbers").innerHTML = "Simple Numbers:" + numbers + ", Count: " + count;
+    }
+
+    getSimpleNumbersIntr = async () => {
+        let first = document.getElementById("first").value;
+        let second = document.getElementById("second").value;
+        let numbers = [];
+        let count = 0;
+        nextPrime:
+        for (let i = first; i <= second; i++) {
+
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) continue nextPrime;
+            }
+            numbers.push(i)
+            count = numbers.length
+        }
+        document.getElementById("SimpleNumbersIntr").innerHTML = "Simple Numbers:" + numbers + ", Count: " + count;
+    }
+
+    getNumbers = () => {
+        let number = document.getElementById("num1").value;
+        console.log(number)
+        let b = 2;
+        let answer = "";
+        while (number > 1) {
+            if (number % b === 0) {
+                answer += b + '*'
+                number /= b;
+                b = 2
+            } else {
+                b++
+            }
+        }
+        answer = answer.slice(0, -1)
+        console.log(answer)
+        const numbersMap = new Map()
+        answer = answer.split('')
+
+        function isNumber(char) {
+            return /^\d$/.test(char);
+        }
+        answer.forEach(element => {
+            if (isNumber(element)) {
+                numbersMap.set(element, (numbersMap.get(element) || 0) + 1)
+            }
+        });
+        let result = ""
+        numbersMap.forEach((value, key) => {
+            if (value > 1) {
+                result += `(${key}^${value})*`
+            }
+            else {
+                result += `${key}*`
+            }
+        })
+        result = result.slice(0, result.length - 1)
+        document.getElementById("Numbers").innerHTML = document.getElementById("num1").value + " = " + result;
+    }
+
+    isSimple = () => {
+        let result = "";
+        let number = document.getElementById("num1").value;
+        console.log(number)
+        for (let i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
+            console.log(number % i === 0)
+            if (number % i === 0) {
+                result = "It is not simple"
+                break
+            } else {
+                result = "It is simple"
+            }
+        }
+        document.getElementById("Simple").innerHTML = " RESULT " + result;
+    }
+</script>
+
+</html>

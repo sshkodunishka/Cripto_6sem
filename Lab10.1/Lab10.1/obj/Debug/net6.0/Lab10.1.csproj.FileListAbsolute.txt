@@ -1,0 +1,15 @@
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\bin\Debug\net6.0\Lab10.1.exe
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\bin\Debug\net6.0\Lab10.1.deps.json
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\bin\Debug\net6.0\Lab10.1.runtimeconfig.json
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\bin\Debug\net6.0\Lab10.1.dll
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\bin\Debug\net6.0\Lab10.1.pdb
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.csproj.AssemblyReference.cache
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.AssemblyInfoInputs.cache
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.AssemblyInfo.cs
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.csproj.CoreCompileInputs.cache
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.dll
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\refint\Lab10.1.dll
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.pdb
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\Lab10.1.genruntimeconfig.cache
+C:\univer\semestr_6\крипта\Lab10.1\Lab10.1\obj\Debug\net6.0\ref\Lab10.1.dll
